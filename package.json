@@ -1,0 +1,30 @@
+{
+  "name": "TodoList",
+  "version": "1.0.0",
+  "description": "使用node框架，构建一个Restful API，能够完成Todo list的以下功能。 <ul> <li>返回所有Todo任务</li> <li>创建一个新的Todo任务</li> <li>返回一个指定ID的Todo任务</li> <li>删除一个Todo任务</li> </ul>",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/app.js",
+    "debug": "DEBUG=express:* nodemon ./src/app.js",
+    "test": "nodemon --ext js --watch ./ --exec 'mocha ./test' --delay 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuankuanren/TodoList.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kuankuanren/TodoList/issues"
+  },
+  "homepage": "https://github.com/kuankuanren/TodoList#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "mocha": "^7.1.1",
+    "nodemon": "^2.0.2",
+    "supertest": "^4.0.2"
+  }
+}
